@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de monedas</title>
+
+    <!--CSS cargado-->
+    <link href="style.css" rel="stylesheet"/>
+    <!--CDN boostrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container-fluid" id="divForm">
+        <div id="formulario">
+            <h2>Conversor de divisas</h2>
+
+            <div class="wrap-input100 validate-input">
+                <p>Importe</p><input class="input100" type="number" name="importe" min="1" placeholder="Importe" id="importe" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input">
+                <p>De:</p>
+                <select name="de" id="de">
+                    <option>USD-Dolar estadounidense</option>
+                    <option>EUR-Euro</option>
+                    <option>GBP-Libra esterlina</option>
+                    <option>CAD-Dolar canadiense</option>
+                    <option>AUD-Dolar australiano</option>
+                    <option>JPY-Yen japones</option>
+                    <option>INR-Rupia india</option>
+                    <option>NZD-Dolar neozelandes</option>
+                    <option>CHF-Franco suizo</option>
+                    <option>ZAR-Rand sudafricano</option>
+                    <option>RUB-Rublo ruso</option>
+                    <option>BGN-Leva búlgara</option>
+                </select>
+                <span class="focus-input100"></span>
+
+            </div>
+
+            <div class="wrap-input100 validate-input">
+                <p>A:</p>
+                <select name="a" id="a">
+                    <option>EUR-Euro</option>
+                    <option>USD-Dolar estadounidense</option>
+                    <option>GBP-Libra esterlina</option>
+                    <option>CAD-Dolar canadiense</option>
+                    <option>AUD-Dolar australiano</option>
+                    <option>JPY-Yen japones</option>
+                    <option>INR-Rupia india</option>
+                    <option>NZD-Dolar neozelandes</option>
+                    <option>CHF-Franco suizo</option>
+                    <option>ZAR-Rand sudafricano</option>
+                    <option>RUB-Rublo ruso</option>
+                    <option>BGN-Leva búlgara</option>
+                </select>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="container-contact100-form-btn">
+                <button class="contact100-form-btn" id="convertir">
+                    Convertir
+                </button>
+            </div>
+
+            <!--Error-->
+            <div class="d-flex justify-content-center align-items-center" id="cajaError">
+                <div>
+                    <p id="error"></p>
+                    <p id="imprimir"></p>
+                </div>
+            </div>
+        </div> <!-- Final div form-->
+
+        <div class="botonSalir">
+            <a href="https://www.nelsondematosdesigner.es/">SALIR</a>
+        </div>
+
+    </div>
+
+    <!-- Archivo JS funcionalidad convertir divisas-->
+    <script src="funcion.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+
+#divForm{
+    height: 50vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 10%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+
+}
+
+#divForm p{
+    font-size: 1,2vh;
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgb(0, 0, 0);
+    padding-top: 3%;
+}
+
+#divForm h2{
+    font-size: 1,5vh;
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgb(0, 0, 0);
+}
+#divForm button{
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 2%;
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+#divForm button:hover{
+    background: #ba9323;
+    cursor:pointer;
+}
+
+
+
+#formulario{
+    width: 80%;
+    text-align: center;
+    padding: 5%;
+    border: black 4px solid;
+}
+
+#divForm select{
+    border-radius: 5px;
+}
+
+#divForm input{
+    border-radius: 5px;
+}
+
+.botonSalir a{
+    border: black 2px solid;
+    border-radius: 20px;
+    background: black;
+    padding: 10px;
+    padding-left: 15PX;
+    padding-right: 15px;
+    font-size: 1,2vh;
+    font-weight: 700;
+    color: #ba9323;
+    text-decoration: none;
+}
