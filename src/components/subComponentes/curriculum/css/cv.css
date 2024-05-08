@@ -1,17 +1,46 @@
 
 .cv{
+  margin-top: 4vh;
+  width: auto;
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    gap: 2vw;
+}
+
+  .columna1CvSinfoto{
+    background: #d9d9d9;
+    width: 190%;
+    margin: 2vw;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 8px;
+    padding: 1vw;
   }
   
   .columna1Cv{
+    background: #d9d9d9;
     width: 90%;
+    margin: 2vw;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 8px;
+    padding: 1vw;
   }
   
-  .cv img{
+  .columna2Cv{
+    background: #d9d9d9;
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 2vw;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 8px;
+  }
+  .ilustracion_cv{
     width: 100%;
-    max-width: 500px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
   }
   
   .cv .columna1Cv .textoCv a{
@@ -28,14 +57,11 @@
   
   #titCv{
     margin-bottom: 30px;
+    text-align: center;
   }
   
   .textoCv p{
     margin-bottom: 30px;
-  }
-  
-  .imgCv{
-    margin-top: 30px;
   }
   
   .textoCv{
@@ -47,4 +73,34 @@
   
   .divBtnCv{
     justify-content: center;
+  }
+
+
+  @media(max-width: 950px){
+    .cv{
+      grid-template-columns: 0.85fr;
+      justify-content: center;
+    }
+
+    .columna1Cv{
+      width: 95%;
+      padding: 2vw;
+      margin: 1vw;
+    }
+    .columna2Cv{
+      width: 95%;
+      border-radius: 50%;
+    }
+
+    .columna1CvSinfoto{
+      width: 95%;
+    }
+
+    .ilustracion_cv{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 8px;
+    }
   }
