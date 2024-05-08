@@ -13,7 +13,7 @@ export const Curriculum = () => {
     ],
     claseDiv: 'columna1Cv',
     url: process.env.PUBLIC_URL + '/assets/cv.pdf',
-    rutaImagen: process.env.PUBLIC_URL + '/img/Fondo.jpg',
+    rutaImagen: process.env.PUBLIC_URL + '/img/ilustracion.jpg',
   };
 
   return (

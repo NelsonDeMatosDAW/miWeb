@@ -41,6 +41,7 @@ a{
   .header .logo h3{
     margin-left: 10px;
     font-weight: 900;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
   }
   
   .header .logo b{
@@ -83,25 +84,7 @@ a{
   }
 
 
-  @media (max-width: 700px) {
-    .bienvenido {
-        flex-direction: column; /* Cambia la dirección del flex container a vertical */
-        align-items: center; /* Centra los elementos horizontalmente */
-        background: #ce9e10;
-      }
-    
-      .columna1Bienvenido {
-        width: 100%; /* Ocupa el ancho completo del contenedor padre */
-        margin-bottom: 20px; /* Agrega espacio entre columna1Bienvenido y columna2Bienvenido */
-        margin: 20px;
-      }
-    
-      .columna2Bienvenido,
-      .columna2Versatilidad {
-        min-width: 100%; /* Ocupa el ancho completo del contenedor padre */
-    
-      }
-    
+  @media (max-width: 700px) {    
       nav ul {
         display: none; /* Oculta la lista de navegación por defecto */
         flex-direction: column;
@@ -126,6 +109,9 @@ a{
     
       .menu-open{
         padding-bottom: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     
       .open{

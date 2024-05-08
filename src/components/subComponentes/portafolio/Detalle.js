@@ -1,14 +1,19 @@
 import React from 'react'
+import { useParams } from 'react-router-dom';
 import { trabajos } from '../../../data/trabajos';
 
-export const Proyectos = ({titulo, texto, url, rutaImagen}) => {
+export const Detalle = () => {
+    const { id } = useParams();
+    const trabajo = trabajos.find(trab => trab.id === id);
+
+    console.log(id);
+
   return (
     <>
     
         <div className='contentPortafolio'>
-                <h1>Proyectos personales</h1>
+                <h1>{trabajo.nombre}</h1>
                 <section className='works'>
-                {trabajos.map(trabajo => (
 
                     <article key={trabajo.id} className='articuloTrabajo'>
                         <div className='mask'>
@@ -20,18 +25,18 @@ export const Proyectos = ({titulo, texto, url, rutaImagen}) => {
                             <p><strong>URL:</strong> {trabajo.url}</p>
                             <p><strong>Tecnologías:</strong> {trabajo.tecnologias}</p>
                             <div id='descripcion'>
-                            <p><strong>Descripción:</strong></p>
-                            {trabajo.descripcion.split('\n').map((parrafo, index) => (
-                                <p key={index}>{parrafo}</p>
-                            ))}
+                                <p><strong>Descripción:</strong></p>
+                                {trabajo.descripcion.split('\n').map((parrafo, index) => (
+                                    <p key={index}>{parrafo}</p>
+                                ))}
                             </div>
+
                             <div className='divBtnAcceder'>
-                            <a href={trabajo.url} id='btnAcceder' target='blanck'>Acceder</a>
+                                <a href={trabajo.url} id='btnAcceder' target='blanck'>Acceder</a>
                             </div>
                         </div>
 
                     </article>
-                ))}
                 </section>
             </div>
 

@@ -4,6 +4,7 @@
     background-size: cover; /*Adapta la img de fondo a la pantalla cubriendo*/
     background-position: center; /*Posiciona la img de fondo en el medio*/
     height: 100vh;
+    width: 100%;
     
   }
   

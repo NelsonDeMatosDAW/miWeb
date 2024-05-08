@@ -11,6 +11,18 @@
   border-radius: 8px; /* Opcional: bordes redondeados */
 }
 
+
+
+/*                 hacer que gire el icono React                     */
+  
+  @keyframes rotar{
+    from{
+      transform: rotateZ(180deg);
+    }to{
+      transform: rotateZ(-180deg);
+    }
+  }
+
 @media (max-width:700px){
     .contenedorPresentacion h1{
         font-size: 2vh;
@@ -27,4 +39,22 @@
     .iconos{
         height: 0.4em;
     }
+
+    .bienvenido {
+        flex-direction: column; /* Cambia la dirección del flex container a vertical */
+        align-items: center; /* Centra los elementos horizontalmente */
+        background: #ce9e10;
+    }
+    
+    .columna1Bienvenido {
+        width: 100%; /* Ocupa el ancho completo del contenedor padre */
+        margin-bottom: 20px; /* Agrega espacio entre columna1Bienvenido y columna2Bienvenido */
+        margin: 20px;
+    }
+    
+    .columna2Bienvenido,
+     .columna2Versatilidad {
+        min-width: 100%; /* Ocupa el ancho completo del contenedor padre */
+    
+      }
 }

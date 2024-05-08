@@ -1,0 +1,50 @@
+
+.cv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .columna1Cv{
+    width: 90%;
+  }
+  
+  .cv img{
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .cv .columna1Cv .textoCv a{
+    border: black 2px solid;
+    background: black;
+    color: #ffffff;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+  
+  }
+  
+  #titCv{
+    margin-bottom: 30px;
+  }
+  
+  .textoCv p{
+    margin-bottom: 30px;
+  }
+  
+  .imgCv{
+    margin-top: 30px;
+  }
+  
+  .textoCv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+  }
+  
+  .divBtnCv{
+    justify-content: center;
+  }

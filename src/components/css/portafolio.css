@@ -1,3 +1,8 @@
+#tituloPotafolio{
+  font-size: 6vh;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
 .divContenedorPortafolio {
     display: flex;
     flex-direction: column;
@@ -9,18 +14,27 @@
     display: flex;
     flex-direction: column;
     width: 95%;
-    padding: 5vh;
+    align-items: center;
+  }
+
+  .contentPortafolio h1{
+    margin-bottom: 4vh;
   }
   
   .works {
     display: grid;
     grid-template-columns: repeat(2, 1fr);  /* Crea dos columnas de igual tamaño */
-    gap: 20px;  /* Espacio entre los elementos */
+    gap: 60px;  /* Espacio entre los elementos */
+    
   }
   
   .articuloTrabajo {
+    max-width: 500px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional para mejor visualización */
     border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
   }
   
   .mask {

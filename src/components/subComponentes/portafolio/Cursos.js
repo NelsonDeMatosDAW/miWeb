@@ -12,10 +12,11 @@ export const Cursos = ({titulo, texto, url, rutaImagen}) => {
                 {cursos.map(curso => (
 
                     <article key={cursos.id} className='articuloTrabajo'>
+                      <a href={cursos.url} target='blank'>
                         <div className='mask'>
                             <img src={"/img/"+curso.id+".jpg"} alt={curso.nombre} id={curso.id === 'conversor' ? 'imgConversor' : null} />
                         </div>
-                    
+                      </a>
                         <div className='infoWorks'>
                             <h1>{curso.nombre}</h1>
                             <p><strong>Tecnologías:</strong> {curso.tecnologias}</p>
@@ -25,7 +26,6 @@ export const Cursos = ({titulo, texto, url, rutaImagen}) => {
                     </article>
                 ))}
                 </section>
-
         </div>
     </>
   );

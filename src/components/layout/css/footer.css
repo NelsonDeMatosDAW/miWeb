@@ -1,0 +1,104 @@
+
+
+/* Footer */
+.fondoFooter{
+    background: black;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .tarjetasContacto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    
+  }
+  
+  .tarjeta{
+    width: 20%;
+    min-height: 200px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #BA9323;
+    border-radius: 10px;
+    padding: 20px;
+    background: white;
+  }
+  
+  .tarjeta a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  .tarjeta a:hover{
+    color:#BA9323;
+  }
+  
+  .tarjeta p{
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .tarjeta .iconosTarjeta{
+    font-size: 30px;
+  }
+  
+  .iconoTarjetaEnlace{
+    font-size: 20px;
+  }
+  
+  hr{
+    border: 1px solid black;
+    width: 100%;
+  }
+  
+  .iconosSociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .iconosSociales div{
+    margin-right: 15px;
+    background: #888888;
+    padding: 15px;
+    border-radius: 50px;
+  }
+
+.footer{
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 35px;
+    padding-top: 30px;
+    background: black;
+    color: #888888;
+  }
+
+  /*Iconos de redes sociales footer*/
+.iconoRed{
+    font-size: 20px;
+}
+
+/* Media query para pantallas más pequeñas (ej. móviles) */
+@media (max-width: 700px) {
+  
+    .tarjetasContacto{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      margin: 0px 5px 0px 5px;
+    }
+  
+    .tarjeta{
+      margin: 0;
+      padding: 0px 10 0px 10;
+    }
+    
+  }

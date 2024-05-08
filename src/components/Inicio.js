@@ -5,6 +5,8 @@ import "./css/inicio.css";
 
 import { Presentacion } from './subComponentes/inicio/Presentacion';
 import { Bienvenido } from './subComponentes/inicio/Bienvenido';
+import {Typewriter} from './helpers/Typewrite.js';
+import SplashScreen from './helpers/SplashScrenn.js';
 
 export const Inicio = () => {
 
@@ -32,6 +34,7 @@ export const Inicio = () => {
   return (
     
     <>
+      <SplashScreen />
       <Presentacion />
 
       <Bienvenido {...fila1props}/>

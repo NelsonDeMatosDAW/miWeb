@@ -7,6 +7,7 @@ import { Curriculum } from '../components/Curriculum';
 import { Contacto } from '../components/Contacto';
 import { HeaderNav } from '../components/layout/HeaderNav';
 import { Footer } from '../components/layout/Footer';
+import { Detalle } from '../components/subComponentes/portafolio/Detalle';
 
 export const MisRutas = () => {
   return (
@@ -23,6 +24,7 @@ export const MisRutas = () => {
               <Route path='/servicios' element={<Servicios />} />
               <Route path='/curriculum' element={<Curriculum />} />
               <Route path='/contacto' element={<Contacto />} />
+              <Route path="/portafolio/detalle/:id" component={Detalle} />
           </Routes>
         </section>
 
