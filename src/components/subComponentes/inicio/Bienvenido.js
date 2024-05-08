@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "./css/inicio.css";
 
 export const Bienvenido = ({titulo, texto, claseImagen}) => {
   return (

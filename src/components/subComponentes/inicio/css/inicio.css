@@ -1,0 +1,30 @@
+.iconoReact{
+    height: 0.6em;
+}
+.iconos{
+    height: 0.5em;
+}
+
+.columna1Bienvenido, .columna2Bienvenido, .columna2Versatilidad{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+  /* Desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
+  border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+@media (max-width:700px){
+    .contenedorPresentacion h1{
+        font-size: 2vh;
+        padding-top: 15vh;
+    }
+    .contenedorPresentacion h2{
+        font-size: 2vh;
+        padding-top: 15vh;
+    }
+
+    .iconoReact{
+        height: 0.4em;
+    }
+    .iconos{
+        height: 0.4em;
+    }
+}
