@@ -14,7 +14,8 @@ export const Cursos = ({titulo, texto, url, rutaImagen}) => {
                     <article key={cursos.id} className='articuloTrabajo'>
                       <a href={cursos.url} target='blank'>
                         <div className='mask'>
-                            <img src={"/img/"+curso.id+".jpg"} alt={curso.nombre} id={curso.id === 'conversor' ? 'imgConversor' : null} />
+                            <img src={`${process.env.PUBLIC_URL}/img/${curso.id}.JPG`} alt={curso.nombre} id={curso.id === 'conversor' ? 'imgConversor' : null} />
+                            
                         </div>
                       </a>
                         <div className='infoWorks'>
